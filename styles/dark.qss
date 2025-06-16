@@ -1,0 +1,82 @@
+/* ===============================================================
+   Mint Balance — dark theme
+   ---------------------------------------------------------------
+   BACKGROUND        #1E1E1E   •  ALT BACKGROUND   #252525
+   PANEL / HEADER    #2E2E2E   •  ACCENT 500       #3C7F5A
+   ACCENT 600        #2F6347   •  TEXT PRIMARY     #E6E6E6
+   TEXT SUBTLE       #9A9A9A   •  NEGATIVE         #C24545
+   =============================================================== */
+
+QWidget              { background:#1E1E1E; color:#E6E6E6; font:11pt "Segoe UI"; }
+QHeaderView::section { background:#2E2E2E; color:#E6E6E6; font-weight:600; }
+QLabel               { background:transparent; }
+
+
+QTabBar::tab {
+    background:#252525; color:#E6E6E6;
+    padding:6px 18px;
+    border:1px solid #2E2E2E; border-bottom:none;
+    border-top-left-radius:6px; border-top-right-radius:6px;
+}
+QTabBar::tab:hover    { background:#303030; }
+QTabBar::tab:selected { background:#1E1E1E; font-weight:600; }
+
+
+QPushButton {
+    background:#3C7F5A; color:#FFFFFF;
+    border:none; border-radius:6px; padding:7px 20px;
+}
+QPushButton:hover   { background:#358C5D; }
+QPushButton:pressed { background:#2F6347; }
+QPushButton:disabled{ background:#252525; color:#9A9A9A; }
+
+
+QGroupBox {
+    background:#252525;
+    border:1px solid #2E2E2E; border-radius:6px;
+    margin-top:20px; padding:10px;
+}
+QGroupBox::title {
+    subcontrol-origin:margin; left:12px; padding:0 6px;
+    background:#1E1E1E; color:#E6E6E6; font-weight:600;
+}
+QGroupBox QPushButton            { background:#3C7F5A; }
+QGroupBox QPushButton:hover      { background:#358C5D; }
+QGroupBox QPushButton:pressed    { background:#2F6347; }
+
+
+QLineEdit, QComboBox, QDateEdit,
+QSpinBox, QDoubleSpinBox {
+    background:#1E1E1E;
+    border:1px solid #2E2E2E; border-radius:4px;
+    padding:4px 6px;
+}
+QLineEdit:focus, QComboBox:focus,
+QDateEdit:focus, QSpinBox:focus,
+QDoubleSpinBox:focus { border:1px solid #3C7F5A; }
+
+
+QComboBox QAbstractItemView {
+    background:#2B2B2B; color:#E6E6E6;
+    border:1px solid #2E2E2E;
+    selection-background-color:#3C7F5A;
+}
+
+
+QTableWidget {
+    background:#1E1E1E;
+    alternate-background-color:#252525;
+}
+QTableView::item:selected { background:#2E2E2E; }
+
+
+QScrollBar::handle       { background:#2E2E2E; border-radius:4px; }
+QScrollBar::handle:hover { background:#3C7F5A; }
+
+
+QCheckBox::indicator {
+    width:16px; height:16px;
+    border:2px solid #3C7F5A; border-radius:3px;
+    background:#1E1E1E;
+}
+QCheckBox::indicator:checked { background:#3C7F5A; image:none; }
